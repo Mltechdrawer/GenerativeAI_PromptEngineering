@@ -1,0 +1,34 @@
+site_name: Generative AI + Prompt Engineering
+site_description: Course intensivo (3 horas)
+site_author: Marilola Afonso -- ULPGC
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - "Block I – Introduction": block1/block1.md
+  - "Block II – Tools": block2/block2.md
+  - "Block III – Prompt Engineering": block3/block3.md
+  - "Block IV – Application y personalization": block4/block4.md
