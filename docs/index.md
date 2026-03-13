@@ -2,7 +2,7 @@
 
 An **3-hour course** focused on the practical use of **Generative AI** and **Prompt Engineering**.
 
-## Structure (3h)
+## Structure
 
 - **Block I (30 min):** Introduction to Generative AI  
 - **Block II (45 min):** Tools and current landscape  
