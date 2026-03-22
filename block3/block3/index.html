@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Course intensivo (3 horas)">
+        <meta name="description" content="Intensive course  (3 horas)">
       
       
         <meta name="author" content="Marilola Afonso -- ULPGC">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Block III – Prompt Engineering - Generative AI + Prompt Engineering</title>
+        <title>Block III – Context Engineering - Generative AI + Prompt Engineering</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#block-iii-prompt-engineering" class="md-skip">
+        <a href="#b-iii-context-engineering" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block III – Prompt Engineering
+              Block III – Context Engineering
             
           </span>
         </div>
@@ -251,7 +251,7 @@
   
   
   <span class="md-ellipsis">
-    Block II – Tools
+    Block II – Prompt Engineering
     
   </span>
   
@@ -282,7 +282,7 @@
   
   
   <span class="md-ellipsis">
-    Block III – Prompt Engineering
+    Block III – Context Engineering
     
   </span>
   
@@ -295,7 +295,7 @@
   
   
   <span class="md-ellipsis">
-    Block III – Prompt Engineering
+    Block III – Context Engineering
     
   </span>
   
@@ -318,28 +318,73 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
+  <a href="#what-is-context-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      Objective
+      What is context engineering?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recommended-structure-of-a-professional-prompt" class="md-nav__link">
+  <a href="#why-is-it-important" class="md-nav__link">
     <span class="md-ellipsis">
-      Recommended structure of a “professional” prompt
+      Why is it important?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended structure of a “professional” prompt">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-engineering-vs-context-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt engineering vs Context engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-can-be-part-of-the-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      What can be part of the context?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-principles-of-context-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic principles of context engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple example">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reusable-template" class="md-nav__link">
+  <a href="#without-context-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      Reusable template
+      Without context engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-context-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      With context engineering
     </span>
   </a>
   
@@ -351,27 +396,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#techniques-we-will-practice" class="md-nav__link">
+  <a href="#where-is-context-engineering-used" class="md-nav__link">
     <span class="md-ellipsis">
-      Techniques we will practice
+      Where is context engineering used?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#guided-practice-step-by-step" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Guided practice (step by step)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-mistakes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common mistakes
+      Summary
     </span>
   </a>
   
@@ -397,7 +433,29 @@
   
   
   <span class="md-ellipsis">
-    Block IV – Application y personalization
+    Block IV – Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block5/block5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block V – Application and personalization
     
   </span>
   
@@ -423,49 +481,121 @@
 
 
 
-<h1 id="block-iii-prompt-engineering">Block III — Prompt Engineering<a class="headerlink" href="#block-iii-prompt-engineering" title="Permanent link">&para;</a></h1>
-<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
-<p>Master techniques to control the <strong>level of detail, format, and quality</strong> of responses.</p>
-<h2 id="recommended-structure-of-a-professional-prompt">Recommended structure of a “professional” prompt<a class="headerlink" href="#recommended-structure-of-a-professional-prompt" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Context</strong></li>
-<li><strong>Role</strong></li>
-<li><strong>Task</strong></li>
-<li><strong>Constraints</strong></li>
-<li><strong>Output format</strong></li>
-<li><strong>Example</strong> (optional but very powerful)</li>
-</ol>
-<h3 id="reusable-template">Reusable template<a class="headerlink" href="#reusable-template" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Context:
-Role:
-Task:
-Constraints:
-Output format:
-Quality criteria:
-</code></pre></div>
-<h2 id="techniques-we-will-practice">Techniques we will practice<a class="headerlink" href="#techniques-we-will-practice" title="Permanent link">&para;</a></h2>
+<h1 id="b-iii-context-engineering">B III — Context Engineering</h1>
+<h2 id="what-is-context-engineering">What is context engineering?</h2>
+<p><strong>Context engineering</strong> is the discipline responsible for <strong>designing and managing the information that surrounds a request to a language model</strong> so that it can generate more accurate, coherent and useful responses.</p>
+<p>It is not only about writing a good prompt, but about <strong>preparing the appropriate information environment</strong> so that the model correctly understands the task it must perform.</p>
+<p>In simple terms:</p>
+<blockquote>
+<p><strong>The prompt is the question.<br />
+The context is everything the model needs to know to respond well.</strong>  </p>
+</blockquote>
+<hr />
+<h2 id="why-is-it-important">Why is it important?</h2>
+<p>Language models do not have direct access to reality or external databases unless they are provided as context.</p>
+<p>Good context engineering allows:</p>
 <ul>
-<li>Zero-shot vs few-shot.</li>
-<li>Step-by-step prompts (plan → execution → verification).</li>
-<li>Strong constraints (length, tone, tables, mandatory fields).</li>
-<li>Modular prompts (copyable blocks).</li>
-<li>Rapid iteration (refinement with A/B testing).</li>
+<li>Reducing incorrect or irrelevant responses.</li>
+<li>Maintaining coherence in long conversations.</li>
+<li>Adapting responses to a specific domain.</li>
+<li>Building more reliable and scalable AI applications.</li>
 </ul>
-<h2 id="guided-practice-step-by-step">Guided practice (step by step)<a class="headerlink" href="#guided-practice-step-by-step" title="Permanent link">&para;</a></h2>
-<p>Case: generate an <strong>assessable activity</strong> (or a report) with controlled output.</p>
-<ol>
-<li>Base prompt (simple).</li>
-<li>Add role + context.</li>
-<li>Add constraints + format.</li>
-<li>Add quality criteria + verification.</li>
-<li>Save it as a reusable template.</li>
-</ol>
-<h2 id="common-mistakes">Common mistakes<a class="headerlink" href="#common-mistakes" title="Permanent link">&para;</a></h2>
+<p>Without good context, even a well-written prompt can produce poor results.</p>
+<hr />
+<h2 id="prompt-engineering-vs-context-engineering">Prompt engineering vs Context engineering</h2>
+<table>
+<thead>
+<tr>
+<th>Prompt engineering</th>
+<th>Context engineering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Focuses on the instruction</td>
+<td>Focuses on the complete environment</td>
+</tr>
+<tr>
+<td>Short-term action</td>
+<td>Continuous action</td>
+</tr>
+<tr>
+<td>Isolated text</td>
+<td>Data, memory, rules, tools</td>
+</tr>
+<tr>
+<td>Ideal for simple tasks</td>
+<td>Key for complex systems</td>
+</tr>
+</tbody>
+</table>
+<p>Both complement each other: <strong>a good prompt needs a good context</strong>.</p>
+<hr />
+<h2 id="what-can-be-part-of-the-context">What can be part of the context?</h2>
+<p>The context may include:</p>
 <ul>
-<li>Ambiguous objective.</li>
-<li>Output format not specified.</li>
-<li>Lack of data or context.</li>
-<li>Not requesting verification / explicit assumptions.</li>
+<li>Previous conversation information.  </li>
+<li>Relevant documents.  </li>
+<li>Domain data (rules, definitions, examples).  </li>
+<li>User or task profile.  </li>
+<li>Results from external tools (search, databases).  </li>
+</ul>
+<p>Not everything should always be included: <strong>more context does not always mean better context</strong>.</p>
+<hr />
+<h2 id="basic-principles-of-context-engineering">Basic principles of context engineering</h2>
+<ol>
+<li>
+<p><strong>Relevance</strong><br />
+   Only information useful for the current task should be included.</p>
+</li>
+<li>
+<p><strong>Clarity</strong><br />
+   The context must be organized and easy to interpret.</p>
+</li>
+<li>
+<p><strong>Updating</strong><br />
+   The context may change over time or with each interaction.</p>
+</li>
+<li>
+<p><strong>Efficiency</strong><br />
+   Models have context limits; it must be used carefully.</p>
+</li>
+</ol>
+<hr />
+<h2 id="simple-example">Simple example</h2>
+<h3 id="without-context-engineering">Without context engineering</h3>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Summarize this text.</p>
+</blockquote>
+<p>The model does not know:<br />
+- Who the summary is for.<br />
+- The expected level of detail.<br />
+- Which aspects are most important.  </p>
+<h3 id="with-context-engineering">With context engineering</h3>
+<p>Additional information is provided such as:<br />
+- Target audience.<br />
+- Purpose of the summary.<br />
+- Desired style.  </p>
+<p>Result: a more precise response aligned with the real need.</p>
+<hr />
+<h2 id="where-is-context-engineering-used">Where is context engineering used?</h2>
+<p>Context engineering is essential in: </p>
+<ul>
+<li>Advanced chatbots.  </li>
+<li>Intelligent assistants.  </li>
+<li>Retrieval-Augmented Generation (RAG) systems.  </li>
+<li>Autonomous agents based on LLMs.  </li>
+<li>AI-based enterprise applications.  </li>
+</ul>
+<p>In these cases, the model needs <strong>much more than an isolated question</strong>.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Context engineering prepares the model’s information environment.</li>
+<li>It goes beyond writing prompts.</li>
+<li>It enables more coherent, accurate and useful responses.</li>
+<li>It is key to building real applications with generative AI.</li>
 </ul>
 
 

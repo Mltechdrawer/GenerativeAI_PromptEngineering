@@ -13,10 +13,6 @@
       
       
       
-        <link rel="prev" href="../../block3/block3/">
-      
-      
-        <link rel="next" href="../../block5/block5/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Block IV – Tools - Generative AI + Prompt Engineering</title>
+        <title>Delimiters - Generative AI + Prompt Engineering</title>
       
     
     
@@ -66,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#b-iv-tools-and-current-landscape" class="md-skip">
+        <a href="#delimiters-in-prompts" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block IV – Tools
+              Delimiters
             
           </span>
         </div>
@@ -246,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../block2/block2/" class="md-nav__link">
+      <a href="../block2/" class="md-nav__link">
         
   
   
@@ -287,32 +283,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Block IV – Tools
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../block4/block4/" class="md-nav__link">
         
   
   
@@ -323,62 +297,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-tools-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick tools overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#practical-comparison-guided-exercise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Practical comparison (guided exercise)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#activity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Activity
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -421,34 +339,104 @@
 
 
 
-<h1 id="b-iv-tools-and-current-landscape">B IV — Tools and current landscape</h1>
-<h2 id="objective">Objective</h2>
-<p>Understand the ecosystem of tools (ChatGPT, DALL·E, Sora, Gemini, Perplexity, Meta AI, Copilot…) and when to use each of them.</p>
-<h2 id="quick-tools-overview">Quick tools overview</h2>
-<ul>
-<li><strong>Chatbots/Assistants</strong>: ideation, writing, analysis, and general support.</li>
-<li><strong>Image generation</strong>: sketches, illustrations, teaching materials, assets.</li>
-<li><strong>Video generation</strong>: prototypes, visual concepts, storytelling.</li>
-<li><strong>Search with sources</strong>: questions that require traceability/citations.</li>
-<li><strong>Code assistants</strong>: generation, refactoring, tests, explanation, and documentation.</li>
-</ul>
-<h2 id="practical-comparison-guided-exercise">Practical comparison (guided exercise)</h2>
-<p>The same objective, three approaches:</p>
-<ol>
-<li><strong>“Explain it to me”</strong> (conversational model)</li>
-<li><strong>“Search with sources”</strong> (citation-based engine)</li>
-<li><strong>“Do it in code”</strong> (programming assistant)</li>
-</ol>
+  <h1>Delimiters</h1>
+
+<h2 id="delimiters-in-prompts">Delimiters in prompts</h2>
+<h3 id="what-are-delimiters">What are delimiters?</h3>
+<p><strong>Delimiters</strong> are <strong>symbols or special markers</strong> used in a prompt to <strong>clearly separate and indicate different parts of the text</strong>, such as instructions, context or input data.</p>
+<p>Their purpose is to help the model <strong>understand what role each piece of information plays</strong> within the prompt.</p>
+<p>In simple terms:</p>
 <blockquote>
-<p>Tip: it’s not about “a better tool”, but about “a more appropriate tool” depending on the context.</p>
+<p><strong>A delimiter indicates where a specific part of the prompt starts and ends.</strong></p>
 </blockquote>
-<h2 id="activity">Activity</h2>
-<p>Choose a real case (teaching, business, development) and answer:</p>
+<hr />
+<h3 id="why-are-they-important">Why are they important?</h3>
+<p>Without delimiters, a language model may: </p>
 <ul>
-<li>Which tool would you use?</li>
-<li>What output do you expect?</li>
-<li>What risks are involved (bias, confidentiality, accuracy)?</li>
+<li>Confuse instructions with data.  </li>
+<li>Mix the text to be processed with the main instruction.  </li>
+<li>Misinterpret which information is relevant.  </li>
 </ul>
+<p>Using delimiters allows: </p>
+<ul>
+<li>Improving prompt understanding.  </li>
+<li>Increasing the accuracy of responses.  </li>
+<li>Reducing ambiguity.  </li>
+<li>Making prompts clearer and reusable.  </li>
+</ul>
+<hr />
+<h3 id="common-types-of-delimiters">Common types of delimiters</h3>
+<p>There is no single mandatory delimiter. Some of the most common ones are:</p>
+<h4 id="triple-quotes">Triple quotes</h4>
+<p>"""
+Delimited text
+"""</p>
+<h4 id="code-blocks">Code blocks</h4>
+<h4 id="bloques-de-codigo">Bloques de código</h4>
+<div class="highlight"><pre><span></span><code>Delimited text
+</code></pre></div>
+<h4 id="explicit-tags">Explicit tags</h4>
+<div class="highlight"><pre><span></span><code>&lt;text&gt;
+Delimited content
+&lt;/text&gt;
+</code></pre></div>
+<h4 id="dashes">Dashes</h4>
+<div class="highlight"><pre><span></span><code>--- Delimited content ---
+</code></pre></div>
+<h4 id="tags">Tags</h4>
+<div class="highlight"><pre><span></span><code>&lt;Delimited content&gt; 
+</code></pre></div>
+<h4 id="equals">Equals</h4>
+<div class="highlight"><pre><span></span><code>=== Delimited content === 
+</code></pre></div>
+<h4 id="custom-markers">Custom markers</h4>
+<div class="highlight"><pre><span></span><code>### INSTRUCTION ###
+### CONTEXT ###
+### TEXT ###
+</code></pre></div>
+<hr />
+<h3 id="practical-example">Practical example</h3>
+<h4 id="without-delimiters">Without delimiters</h4>
+<div class="highlight"><pre><span></span><code>Summarize the following text Machine learning is a branch of artificial intelligence that...
+</code></pre></div>
+<p>The model may not clearly identify where the text to summarize begins.</p>
+<h4 id="with-delimiters">With delimiters</h4>
+<div class="highlight"><pre><span></span><code>Summarize the following text:
+
+&quot;&quot;&quot; Machine learning is a branch of artificial intelligence that... &quot;&quot;&quot;
+</code></pre></div>
+<p>Ahora el modelo entiende con claridad <strong>qué contenido debe procesar</strong>.</p>
+<hr />
+<h3 id="delimiters-and-security">Delimiters and security</h3>
+<p>Delimiters also help to:</p>
+<ul>
+<li>Isolate external data from the main instructions.</li>
+<li>Reduce prompt injection risks.</li>
+<li>Prevent hidden instructions within a text from influencing the model.</li>
+</ul>
+<p>This is especially important when the text comes from users or external sources.</p>
+<hr />
+<h3 id="best-practices">Best practices</h3>
+<ul>
+<li>Use delimiters consistently.</li>
+<li>Do not mix too many different types unnecessarily.</li>
+<li>Choose visually clear delimiters.</li>
+<li>Explicitly indicate what each block contains when relevant.</li>
+</ul>
+<hr />
+<details>
+<summary> Examples</summary> Triple double quotes <pre><code> Summarize the following text: """ Software engineering is a discipline of computer science that deals with the design, development and maintenance of high-quality software systems. """ </code></pre> Triple single quotes --- Code blocks <pre><code> Explain what the following code does: ``` for i in range(5): print(i). ``` </code></pre> Explicit tags <pre><code> &lt;instruction&gt; Explain what the following code does. &lt;/instruction&gt; &lt;code&gt; for i in range(3): print(i) &lt;/code&gt; &lt;audience&gt; First-year university student &lt;/audience&gt; </code></pre> Dashes <pre><code> Summarize the following text: --- Software engineering is a discipline of computer science that deals with the design, development and maintenance of high-quality software systems. --- </code></pre> Tags <pre><code> Summarize the following text: &lt;Software engineering is a discipline of computer science that deals with the design, development and maintenance of high-quality software systems.&gt; </code></pre> Equals <pre><code> Summarize the following text: === Software engineering is a discipline of computer science that deals with the design, development and maintenance of high-quality software systems. === </code></pre> Custom markers <pre><code> Summarize the following text: ### Software engineering is a discipline of computer science that deals with the design, development and maintenance of high-quality software systems. ### </code></pre>
+</details>
+
+<hr />
+<h3 id="summary">Summary</h3>
+<ul>
+<li>Delimiters organize and structure prompts.</li>
+<li>They help differentiate instructions from data.</li>
+<li>They improve accuracy and security.</li>
+<li>They are a key tool in prompt and context engineering.</li>
+</ul>
+<hr />
 
 
 

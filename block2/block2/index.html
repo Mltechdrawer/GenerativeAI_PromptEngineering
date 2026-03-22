@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Course intensivo (3 horas)">
+        <meta name="description" content="Intensive course  (3 horas)">
       
       
         <meta name="author" content="Marilola Afonso -- ULPGC">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Block II – Tools - Generative AI + Prompt Engineering</title>
+        <title>Block II – Prompt Engineering - Generative AI + Prompt Engineering</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#block-ii-tools-and-current-landscape-45-min" class="md-skip">
+        <a href="#b-ii-prompt-engineering" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block II – Tools
+              Block II – Prompt Engineering
             
           </span>
         </div>
@@ -260,7 +260,7 @@
   
   
   <span class="md-ellipsis">
-    Block II – Tools
+    Block II – Prompt Engineering
     
   </span>
   
@@ -273,7 +273,7 @@
   
   
   <span class="md-ellipsis">
-    Block II – Tools
+    Block II – Prompt Engineering
     
   </span>
   
@@ -305,27 +305,258 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-tools-overview" class="md-nav__link">
+  <a href="#1-introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick tools overview
+      1. Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#practical-comparison-guided-exercise" class="md-nav__link">
+  <a href="#2-what-is-a-prompt" class="md-nav__link">
     <span class="md-ellipsis">
-      Practical comparison (guided exercise)
+      2. What is a prompt?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activity" class="md-nav__link">
+  <a href="#3-objectives-of-prompt-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      Activity
+      3. Objectives of prompt engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-anatomy-of-a-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Anatomy of a prompt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Anatomy of a prompt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-efficient-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of efficient structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-inefficient-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Inefficient prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-types-of-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Types of prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-prompt-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Prompt design principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-advanced-prompting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Advanced prompting techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Advanced prompting techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-trigger-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Trigger words
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-chain-of-thought-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Chain of Thought (CoT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-prompt-priming" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Prompt Priming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-one-shot-and-few-shot-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4 One-shot and Few-shot prompting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-tree-of-thoughts-tot" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5 Tree of Thoughts (ToT)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5 Tree of Thoughts (ToT)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main idea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences-with-chain-of-thought" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differences with Chain of Thought
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended use cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-visualization-of-thoughts-vot" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.6 Visualization of Thoughts (VoT)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.6 Visualization of Thoughts (VoT)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-idea_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main idea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potential-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potential use cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-state-of-the-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current state of the technique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teaching-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teaching recommendation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-output-format-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Output format specification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-final-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Final reflection
     </span>
   </a>
   
@@ -351,7 +582,7 @@
   
   
   <span class="md-ellipsis">
-    Block III – Prompt Engineering
+    Block III – Context Engineering
     
   </span>
   
@@ -373,7 +604,29 @@
   
   
   <span class="md-ellipsis">
-    Block IV – Application y personalization
+    Block IV – Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block5/block5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block V – Application and personalization
     
   </span>
   
@@ -399,34 +652,261 @@
 
 
 
-<h1 id="block-ii-tools-and-current-landscape-45-min">Block II — Tools and current landscape (45 min)<a class="headerlink" href="#block-ii-tools-and-current-landscape-45-min" title="Permanent link">&para;</a></h1>
-<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
-<p>Understand the ecosystem of tools (ChatGPT, DALL·E, Sora, Gemini, Perplexity, Meta AI, Copilot…) and when to use each of them.</p>
-<h2 id="quick-tools-overview">Quick tools overview<a class="headerlink" href="#quick-tools-overview" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Chatbots/Assistants</strong>: ideation, writing, analysis, and general support.</li>
-<li><strong>Image generation</strong>: sketches, illustrations, teaching materials, assets.</li>
-<li><strong>Video generation</strong>: prototypes, visual concepts, storytelling.</li>
-<li><strong>Search with sources</strong>: questions that require traceability/citations.</li>
-<li><strong>Code assistants</strong>: generation, refactoring, tests, explanation, and documentation.</li>
-</ul>
-<h2 id="practical-comparison-guided-exercise">Practical comparison (guided exercise)<a class="headerlink" href="#practical-comparison-guided-exercise" title="Permanent link">&para;</a></h2>
-<p>The same objective, three approaches:</p>
+<h1 id="b-ii-prompt-engineering">B II — Prompt Engineering</h1>
+<h2 id="objective">Objective</h2>
+<p>Master techniques to control the <strong>level of detail, format, and quality</strong> of responses.</p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p><strong>Prompt engineering</strong> (<em>Prompt Engineering</em>) is the discipline that studies how to <strong>design, formulate and optimize instructions</strong> to effectively interact with Large Language Models (<em>Large Language Models</em>, LLMs).</p>
+<p>Since LLMs generate their responses based on the input text, the quality of the <em>prompt</em> is crucial to obtain responses that are <strong>accurate, coherent, useful and aligned with the user's objectives</strong>.</p>
+<hr />
+<h2 id="2-what-is-a-prompt">2. What is a prompt?</h2>
+<p>A <strong>prompt</strong> is the input text provided to a language model to guide the generation of a response. It can take multiple forms, from a simple question to a complex instruction including context, examples and constraints.</p>
+<p>Prompts allow:<br />
+- Guiding the generation of responses.<br />
+- Optimizing the performance of the model.<br />
+- Adapting the model’s behavior to different contexts.<br />
+- Evaluating the quality and reliability of the obtained responses  </p>
+<hr />
+<h2 id="3-objectives-of-prompt-engineering">3. Objectives of prompt engineering</h2>
+<p>The main objectives of prompt engineering are:</p>
 <ol>
-<li><strong>“Explain it to me”</strong> (conversational model)</li>
-<li><strong>“Search with sources”</strong> (citation-based engine)</li>
-<li><strong>“Do it in code”</strong> (programming assistant)</li>
+<li><strong>Guide the generation of responses</strong>, reducing ambiguity.</li>
+<li><strong>Optimize the performance of the model</strong>, obtaining more relevant responses.</li>
+<li><strong>Adapt the prompt to the context</strong>, domain and user level.</li>
+<li><strong>Evaluate and improve the quality of prompts</strong>, identifying deficiencies and biases.</li>
 </ol>
-<blockquote>
-<p>Tip: it’s not about “a better tool”, but about “a more appropriate tool” depending on the context.</p>
-</blockquote>
-<h2 id="activity">Activity<a class="headerlink" href="#activity" title="Permanent link">&para;</a></h2>
-<p>Choose a real case (teaching, business, development) and answer:</p>
+<hr />
+<h2 id="4-anatomy-of-a-prompt">4. Anatomy of a prompt</h2>
+<p>An effective prompt usually consists of the following elements:</p>
+<ol>
+<li><strong>Clarity and specificity</strong>  </li>
+<li><strong>Context and background</strong>  </li>
+<li><strong>Objective or purpose</strong>  </li>
+<li><strong>Keywords and relevant terms</strong>  </li>
+<li><strong>Constraints or specific guidelines</strong> </li>
+</ol>
+<h3 id="example-of-efficient-structure">Example of efficient structure</h3>
 <ul>
-<li>Which tool would you use?</li>
-<li>What output do you expect?</li>
-<li>What risks are involved (bias, confidentiality, accuracy)?</li>
+<li>
+<p><strong>Introduction:</strong><br />
+<em>I am interested in sustainable practices in modern agriculture.</em></p>
+</li>
+<li>
+<p><strong>Specific question:</strong><br />
+<em>Could you explain how precision agriculture techniques and organic farming contribute to environmental sustainability?</em></p>
+</li>
+<li>
+<p><strong>Guidelines:</strong><br />
+<em>The response should be technical, detailed and not exceed 500 words.</em></p>
+</li>
 </ul>
+<hr />
+<h2 id="5-inefficient-prompts">5. Inefficient prompts</h2>
+<p>A poorly designed prompt can generate vague or irrelevant responses.</p>
+<p><strong>Example of inefficient prompt:</strong></p>
+<blockquote>
+<p><em>“Tell me things about plants.”</em></p>
+</blockquote>
+<p>This prompt lacks:<br />
+- clarity,<br />
+- context,<br />
+- a defined objective,  </p>
+<p>It does not specify which aspect of plants is of interest (biology, gardening use, ecological importance, etc.), it does not provide context or background, and it does not establish a clear objective or purpose for the response.<br />
+This lack of structure and detail may result in an AI response that does not meet the user’s expectations or needs.</p>
+<hr />
+<h2 id="6-types-of-prompts">6. Types of prompts</h2>
+<p>Depending on their purpose, prompts can be classified as:</p>
+<ol>
+<li>
+<p><strong>Informational</strong><br />
+<em>Example:</em> Explain the causes and effects of climate change.</p>
+</li>
+<li>
+<p><strong>Creative</strong><br />
+<em>Example:</em> Write a short story about a trip to Mars in the year 2100.</p>
+</li>
+<li>
+<p><strong>Educational</strong><br />
+<em>Example:</em> Describe the process of photosynthesis.</p>
+</li>
+<li>
+<p><strong>Interactive</strong><br />
+<em>Example:</em> What is your favorite movie and why?</p>
+</li>
+<li>
+<p><strong>Analytical</strong><br />
+<em>Example:</em> Analyze the sales trends of the last quarter.</p>
+</li>
+<li>
+<p><strong>Technical</strong><br />
+<em>Example:</em> Explain how electric motors work.</p>
+</li>
+</ol>
+<hr />
+<h2 id="7-prompt-design-principles">7. Prompt design principles</h2>
+<p>Good prompt design is based on the following principles:</p>
+<ol>
+<li><strong>Clarity and precision</strong>  </li>
+<li><strong>Specificity</strong>  </li>
+<li><strong>Context and relevance</strong>  </li>
+<li><strong>Defined objective</strong>  </li>
+<li><strong>Conciseness</strong>  </li>
+<li><strong>Adaptability</strong>  </li>
+</ol>
+<p>These principles help maximize the usefulness of the model and reduce incorrect or ambiguous responses.</p>
+<p><a href="../delimiters/">Delimiters</a></p>
+<hr />
+<h2 id="8-advanced-prompting-techniques">8. Advanced prompting techniques</h2>
+<h3 id="81-trigger-words">8.1 Trigger words</h3>
+<p><em>Trigger words</em> are words that guide the model toward a specific type of reasoning or response, for example: <em>analyze</em>, <em>justify</em>, <em>compare</em>, <em>summarize</em>.</p>
+<p><a href="../examplesprompts/#1-analytical-prompt">Analytical</a></p>
+<p><a href="../examplesprompts/#2-step-by-step-explanatory-prompt">Explanatory</a></p>
+<p><a href="../examplesprompts/#3-comparative-and-critical-prompt">Comparative and critical</a></p>
+<hr />
+<h3 id="82-chain-of-thought-cot">8.2 Chain of Thought (CoT)</h3>
+<p>The <strong>Chain of Thought</strong> technique consists of explicitly asking the model to <strong>reason step by step</strong>, which improves performance on complex problems.</p>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p><em>Solve the problem step by step, explaining the reasoning followed.</em></p>
+</blockquote>
+<p><a href="../examplesprompts/#1-quantitative-problem">Quantitative problem</a></p>
+<p><a href="../examplesprompts/#2-multicriteria-decision">Multicriteria decision</a></p>
+<p><a href="../examplesprompts/#3-route-optimization">Route optimization</a></p>
+<hr />
+<h3 id="83-prompt-priming">8.3 Prompt Priming</h3>
+<p><strong>Priming</strong> consists of providing initial instructions that prepare the model before the main task.</p>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p><em>Start your answer with a brief introduction, continue with a step-by-step example and finish with a practice question.</em></p>
+</blockquote>
+<p><a href="../examplesprompts/#1-priming-with-expert-role">Expert role priming</a></p>
+<p><a href="../examplesprompts/#2-priming-with-structure-and-style">Structure and style priming</a></p>
+<p><a href="../examplesprompts/#3-priming-with-usage-context">Usage context priming</a></p>
+<hr />
+<h3 id="84-one-shot-and-few-shot-prompting">8.4 One-shot and Few-shot prompting</h3>
+<ul>
+<li><strong>One-shot:</strong> a single example is provided.</li>
+<li><strong>Few-shot:</strong> several examples are provided to guide the model’s behavior.</li>
+</ul>
+<p>These techniques allow <strong>modelling the style, format and level of detail</strong> of the response.</p>
+<p><a href="../examplesprompts/#1-one-shot">One shot single example</a></p>
+<p><a href="../examplesprompts/#2-one-shot">One shot format and style</a></p>
+<p><a href="../examplesprompts/#3-few-shot">Few shot multiple examples</a></p>
+<p><a href="../examplesprompts/#4-few-shot">Few shot consistent role and style</a></p>
+<h3 id="85-tree-of-thoughts-tot">8.5 Tree of Thoughts (ToT)</h3>
+<p>The <strong>Tree of Thoughts (ToT)</strong> technique is an advanced extension of the <em>Chain of Thought</em> approach that allows language models to <strong>explore multiple reasoning paths in parallel</strong>, organized as a tree instead of following a single linear sequence.</p>
+<h4 id="main-idea">Main idea</h4>
+<p>Instead of generating a single reasoning chain, the model:</p>
+<ul>
+<li>Produces <strong>multiple thought alternatives</strong> at each step,</li>
+<li>Evaluates the quality or feasibility of each alternative,</li>
+<li>Discards less promising branches,</li>
+<li>Continues exploring the most relevant branches until reaching a final solution.</li>
+</ul>
+<p>This approach is especially effective in <strong>complex problems</strong>, where exploration, planning and intermediate evaluation are essential.</p>
+<h4 id="differences-with-chain-of-thought">Differences with Chain of Thought</h4>
+<table>
+<thead>
+<tr>
+<th>Chain of Thought</th>
+<th>Tree of Thoughts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear reasoning</td>
+<td>Branching reasoning</td>
+</tr>
+<tr>
+<td>Single sequence</td>
+<td>Multiple possible paths</td>
+</tr>
+<tr>
+<td>No explicit intermediate evaluation</td>
+<td>Evaluation and pruning of branches</td>
+</tr>
+<tr>
+<td>Suitable for moderate problems</td>
+<td>Suitable for complex problems</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../examplesprompts/#1-tree-of-thoughts">Tree of thoughts</a></p>
+<h4 id="recommended-use-cases">Recommended use cases</h4>
+<ul>
+<li>Logic and abstract reasoning problems</li>
+<li>Planning and decision-making</li>
+<li>Games, puzzles and strategy search</li>
+<li>Tasks where multiple solutions are possible</li>
+</ul>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>Encourages more deliberate and deeper reasoning</li>
+<li>Reduces the likelihood of rushed solutions</li>
+<li>Improves quality in tasks requiring exploration</li>
+</ul>
+<h4 id="limitations">Limitations</h4>
+<ul>
+<li>Increases computational cost</li>
+<li>Not always necessary for simple tasks</li>
+</ul>
+<hr />
+<h3 id="86-visualization-of-thoughts-vot">8.6 Visualization of Thoughts (VoT)</h3>
+<p><strong>Visualization of Thoughts (VoT)</strong> is an emerging technique that aims to guide the model to <strong>represent its reasoning in a visual or spatial way</strong>, such as mental diagrams, concept maps or graphical structures, in order to improve reasoning in certain domains.</p>
+<h4 id="main-idea_1">Main idea</h4>
+<p>The model not only explains its steps, but also:</p>
+<ul>
+<li>Organizes reasoning as a <strong>visual structure</strong>,</li>
+<li>Uses spatial representations (hierarchical lists, graphs, maps),</li>
+<li>Simulates building a “mental map” of the problem.</li>
+</ul>
+<p>This technique has shown promising results in <strong>spatial reasoning</strong>, navigation, planning and structural understanding tasks.</p>
+<p><a href="../examplesprompts/#1-visualization-of-thoughts">Visualization of thoughts</a></p>
+<h4 id="potential-use-cases">Potential use cases</h4>
+<ul>
+<li>Spatial or geometric reasoning</li>
+<li>Analysis of complex systems</li>
+<li>Problems that benefit from diagrams or maps</li>
+<li>Support for multimodal reasoning</li>
+</ul>
+<h4 id="current-state-of-the-technique">Current state of the technique</h4>
+<p><strong>Experimental technique</strong></p>
+<ul>
+<li>Not yet established as a standard in prompt engineering</li>
+<li>Mainly derived from recent academic research</li>
+<li>Considered an <strong>emerging line</strong>, rather than an established practice</li>
+</ul>
+<h4 id="teaching-recommendation">Teaching recommendation</h4>
+<p>This technique is suitable for:</p>
+<ul>
+<li>Introducing current research trends</li>
+<li>Showing the limits and evolution of prompt engineering</li>
+<li>Advanced or exploratory contexts</li>
+</ul>
+<p>Not recommended as a basic or general-purpose technique.</p>
+<hr />
+<h2 id="9-output-format-specification">9. Output format specification</h2>
+<p>Prompts can explicitly specify the <strong>format of the response</strong>, such as:</p>
+<ul>
+<li>Plain text</li>
+<li>Lists and bullet points</li>
+<li>Tables</li>
+<li>Source code</li>
+<li>Summaries</li>
+<li>Translations</li>
+<li>Structured formats (CSV, JSON, etc.)</li>
+</ul>
+<p><a href="../examplesprompts/#1-specify-the-output-format">Specify output format</a></p>
+<hr />
+<h2 id="10-final-reflection">10. Final reflection</h2>
+<p>Prompt engineering is not only about “asking good questions”, but about <strong>understanding how language models interact with input text</strong>.</p>
+<p>Mastering this discipline allows:  <br />
+- improving the quality of responses,<br />
+- reducing errors and hallucinations,<br />
+- critically and responsibly leveraging the potential of LLMs.  </p>
+<p>This knowledge is essential for the professional and academic use of tools such as ChatGPT.</p>
+<p><a href="../examplestotry/">Practical examples</a> </p>
+<p><a href="../activity1/">Activity 1</a></p>
 
 
 

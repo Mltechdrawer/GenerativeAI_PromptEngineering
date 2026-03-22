@@ -1,0 +1,599 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Intensive course  (3 horas)">
+      
+      
+        <meta name="author" content="Marilola Afonso -- ULPGC">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Examples - Generative AI + Prompt Engineering</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#examples" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Generative AI + Prompt Engineering" class="md-header__button md-logo" aria-label="Generative AI + Prompt Engineering" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Generative AI + Prompt Engineering
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Examples
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Generative AI + Prompt Engineering" class="md-nav__button md-logo" aria-label="Generative AI + Prompt Engineering" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Generative AI + Prompt Engineering
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block1/block1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block I – Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block II – Prompt Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block3/block3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block III – Context Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block4/block4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block IV – Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block5/block5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block V – Application and personalization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="examples">Examples</h1>
+<h2 id="examples-trigger-words">Examples <em>trigger words</em></h2>
+<p>Below are three examples of prompts that use <strong>trigger words</strong> to guide the type of response generated by a language model.<br />
+These examples show how the conscious use of <strong>trigger words</strong> allows directing the model’s behavior toward analysis, structured reasoning or critical evaluation.</p>
+<hr />
+<h3 id="1-analytical-prompt">1 Analytical prompt</h3>
+<p><strong>Trigger words:</strong> <em>analyze, identify, conclude</em></p>
+<blockquote>
+<p><strong>Analyze</strong> the following set of monthly sales data.<br />
+<strong>Identify</strong> the main trends and the possible factors that explain them.<br />
+<strong>Conclude</strong> with a brief summary of the implications for business decision-making.</p>
+</blockquote>
+<p><em>This prompt forces the model to structure the response into phases of analysis and synthesis.</em></p>
+<hr />
+<h3 id="2-step-by-step-explanatory-prompt">2 Step-by-step explanatory prompt</h3>
+<p><strong>Trigger words:</strong> <em>explain, step by step, justify</em></p>
+<blockquote>
+<p><strong>Explain step by step</strong> how to solve a quadratic equation using the general formula.<br />
+<strong>Justify</strong> each step of the procedure and use a simple numerical example.</p>
+</blockquote>
+<p><em>Trigger words induce sequential reasoning and clarity in explanation.</em></p>
+<blockquote>
+<p><strong>Explain</strong> how to solve a quadratic equation using the general formula.<br />
+<strong>Include</strong> a simple numerical example.</p>
+</blockquote>
+<hr />
+<h3 id="3-comparative-and-critical-prompt">3 Comparative and critical prompt</h3>
+<p><strong>Trigger words:</strong> <em>compare, evaluate, argue</em></p>
+<blockquote>
+<p><strong>Compare</strong> relational and NoSQL database models.<br />
+<strong>Evaluate</strong> their advantages and disadvantages in the context of large-scale web applications.<br />
+<strong>Argue</strong> in which cases each one would be more appropriate.</p>
+</blockquote>
+<p><em>This prompt guides the model toward a critical and reasoned response, not merely descriptive.</em></p>
+<hr />
+<h2 id="examples-chain-of-thought-cot">Examples <em>Chain of Thought (CoT)</em></h2>
+<p>Below are three examples that explicitly request <strong>step-by-step reasoning</strong> to improve the quality of responses in complex tasks.</p>
+<hr />
+<h3 id="1-quantitative-problem">1 Quantitative problem</h3>
+<p>Step-by-step reasoning</p>
+<blockquote>
+<p>Solve the following problem <strong>reasoning step by step</strong> and showing intermediate calculations:<br />
+A train leaves station A towards B at 60 km/h. At the same time, another train leaves B towards A at 80 km/h. The distance between A and B is 300 km.<br />
+1) At what point do they meet?<br />
+2) How much time has passed since departure?<br />
+At the end, include a <strong>summary</strong> with the result and the units.</p>
+</blockquote>
+<hr />
+<h3 id="2-multicriteria-decision">2 Multicriteria decision</h3>
+<p>CoT + structure</p>
+<blockquote>
+<p>I want you to help me decide between two business ideas.<br />
+- Idea A: online store for women's clothing and accessories.<br />
+- Idea B: promoting products online with affiliate commissions.<br />
+<strong>Think step by step</strong> evaluating: initial investment, risk, scalability, time to revenue, operational complexity and sustainability.<br />
+Return the answer with this structure:<br />
+1. Comparative analysis (criterion by criterion)<br />
+2. Final recommendation<br />
+3. Action plan in 5 steps</p>
+</blockquote>
+<hr />
+<h3 id="3-route-optimization">3 Route optimization</h3>
+<p>CoT + verification</p>
+<blockquote>
+<p>I am planning a one-day trip and want to visit five places minimizing total travel time:<br />
+1. Museum<br />
+2. Park<br />
+3. Shopping center<br />
+4. Restaurant<br />
+5. Theater<br />
+Distances (minutes) between each pair:<br />
+- Museum–Park: 10<br />
+- Museum–Shopping center: 15<br />
+- Museum–Restaurant: 20<br />
+- Museum–Theater: 25<br />
+- Park–Shopping center: 10<br />
+- Park–Restaurant: 15<br />
+- Park–Theater: 20<br />
+- Shopping center–Restaurant: 10<br />
+- Shopping center–Theater: 15<br />
+- Restaurant–Theater: 10<br />
+Generate an initial route and then <strong>optimize it step by step</strong>, <strong>evaluating each change</strong> before applying the next.<br />
+At the end, provide:<br />
+- Final route<br />
+- Total time<br />
+- Brief explanation of why it is better than the initial one</p>
+</blockquote>
+<hr />
+<h2 id="examples-of-prompts-with-priming">Examples of prompts with <em>Priming</em></h2>
+<p>Below are three examples of prompts that use the <strong>priming</strong> technique to influence the style, level and approach of the responses generated by a language model.</p>
+<p>These examples show how <strong>priming</strong> allows preparing the model before the main task, improving the suitability of responses to the context and user objectives.</p>
+<hr />
+<h3 id="1-priming-with-expert-role">1 Priming with expert role</h3>
+<blockquote>
+<p>Act as a <strong>university professor of computer science specialized in artificial intelligence</strong>.<br />
+Explain the basic functioning of large language models (LLMs) using clear and rigorous language, suitable for final-year undergraduate students.<br />
+Finish with a brief summary of the key ideas.</p>
+</blockquote>
+<p><em>Priming establishes the role and expected academic level before generating the response.</em></p>
+<hr />
+<h3 id="2-priming-with-structure-and-style">2 Priming with structure and style</h3>
+<blockquote>
+<p>Start your response with a <strong>brief introduction</strong>, continue with a <strong>step-by-step explanation</strong>, and finish with a <strong>simple practical example</strong>.<br />
+The topic is: solving quadratic equations using the general formula.<br />
+Use language suitable for secondary education students.</p>
+</blockquote>
+<p><em>Priming explicitly defines the structure and style of the response.</em></p>
+<hr />
+<h3 id="3-priming-with-usage-context">3 Priming with usage context</h3>
+<blockquote>
+<p>Imagine you are advising a <strong>technology company that wants to adopt ChatGPT</strong> in its internal processes.<br />
+Describe the <strong>advantages</strong>, <strong>limitations</strong> and <strong>risks</strong> of its use in a professional environment.<br />
+The response should be aimed at decision-makers and not exceed 400 words.</p>
+</blockquote>
+<p><em>Priming contextualizes the situation and conditions the approach of the response.</em></p>
+<hr />
+<h2 id="examples-of-one-shot-and-few-shot-prompting">Examples of <em>One-shot</em> and <em>Few-shot prompting</em></h2>
+<p>Below are examples of prompts that use <strong>one-shot</strong> and <strong>few-shot prompting</strong> techniques, providing one or several prior examples to guide the model’s behavior.</p>
+<p>These examples illustrate how <strong>one-shot</strong> and <strong>few-shot prompting</strong> allow shaping the model’s behavior through examples, without the need for explicit rules.</p>
+<hr />
+<h3 id="1-one-shot">1 One-shot</h3>
+<p>with a single example</p>
+<blockquote>
+<p>Correct and improve the wording of the following text, making it more formal.  </p>
+<p><strong>Example:</strong><br />
+Original text: <em>"ola profe, no puedo ir a clase mañana"</em><br />
+Corrected text: <em>"Hola profesor, no podré asistir a clase mañana."</em>  </p>
+<p><strong>Now correct this text:</strong><br />
+<em>"buenas tarde. quiero quitarme de la linea del tfno por que ya no uso mas"</em></p>
+</blockquote>
+<p><em>The model is given a single example that acts as a reference for the task.</em></p>
+<hr />
+<h3 id="2-one-shot">2 One-shot</h3>
+<p>format and style</p>
+<blockquote>
+<p>Summarize the following content following the format of the example.  </p>
+<p><strong>Example:</strong><br />
+Original text: <em>Photosynthesis is the process by which plants...</em><br />
+Summary: <em>Photosynthesis allows plants to produce their food using sunlight.</em>  </p>
+<p><strong>Text to summarize:</strong><br />
+<em>Artificial intelligence is a field of computer science that studies...</em></p>
+</blockquote>
+<p><em>One example guides the level of synthesis and style of the response.</em></p>
+<hr />
+<h3 id="3-few-shot">3 Few-shot</h3>
+<p>multiple examples</p>
+<blockquote>
+<p>Classify the following prompt according to its type.  </p>
+<p><strong>Examples:</strong><br />
+Prompt: <em>"Analyze the causes of climate change."</em><br />
+Classification: Trigger words  </p>
+<p>Prompt: <em>"Solve this problem reasoning step by step."</em><br />
+Classification: Chain of Thought  </p>
+<p>Prompt: <em>"Tell me things about plants."</em><br />
+Classification: Inefficient prompt  </p>
+<p><strong>Now classify this prompt:</strong><br />
+<em>"Compare two programming languages and argue which one is more suitable for data science."</em></p>
+</blockquote>
+<p><em>Multiple examples allow the model to infer the classification pattern.</em></p>
+<hr />
+<h3 id="4-few-shot">4 Few-shot</h3>
+<p>consistent role and style</p>
+<blockquote>
+<p>Act as a <strong>motivational assistant</strong> for university students.  </p>
+<p><strong>Examples:</strong><br />
+Input: <em>"I feel unmotivated with the subject."</em><br />
+Response: <em>"It's normal to feel this way sometimes, but remember everything you have already achieved. Keep going."</em>  </p>
+<p>Input: <em>"I don't think I can pass the exam."</em><br />
+Response: <em>"Trust your effort. You have overcome challenges before and this will not be different."</em>  </p>
+<p><strong>Now respond to:</strong><br />
+<em>"I feel like I am not making progress on the project."</em></p>
+</blockquote>
+<p><em>Few-shot reinforces tone, role and response style.</em></p>
+<hr />
+<h2 id="example-tree-of-thoughts-tot">Example <em>Tree of Thoughts (ToT)</em></h2>
+<h3 id="1-tree-of-thoughts">1 Tree of thoughts</h3>
+<p>Solve the following problem by exploring multiple possible approaches.
+Organize your ideas as a reasoning tree:
+- Generate several options at each step
+- Briefly evaluate each one
+- Continue developing the most promising ones
+Finally, provide the best solution found.</p>
+<h2 id="example-visualization-of-thoughts-vot">Example <em>Visualization of Thoughts (VoT)</em></h2>
+<h3 id="1-visualization-of-thoughts">1 Visualization of thoughts</h3>
+<p>Analyze the problem by creating a visual representation of your thoughts.
+Organize the information as if it were a diagram or concept map:
+- Identify the main elements
+- Show relationships between them
+- Use a clear hierarchical structure
+Then, explain the final solution.</p>
+<h2 id="examples-of-prompts-with-format">Examples of prompts with format</h2>
+<h3 id="1-specify-the-output-format">1 Specify the output format</h3>
+<p><strong>Plain text:</strong> I can generate responses in simple text format, which is the standard output format in most conversations.<br />
+<strong>Lists and bullet points:</strong> I can create numbered or bulleted lists to organize information in a more structured way.<br />
+<strong>Tables:</strong> I can generate simple tables with rows and columns to present data in an organized manner.<br />
+<strong>Source code:</strong> If you need examples of code in popular programming languages, I can generate source code in formats such as Python, Java, C++, etc.<br />
+<strong>Citations and references:</strong> If you need citations or references in your responses, I can provide them in the appropriate format, such as APA or MLA style.<br />
+<strong>Summaries:</strong> I can summarize long information or extensive documents into a more concise and easy-to-understand format.<br />
+<strong>Long paragraphs:</strong> If you prefer more detailed and expansive responses, I can generate long paragraphs with complete explanations.<br />
+<strong>Translations:</strong> I can translate text from one language to another if needed.<br />
+<strong>Summaries and extracts from URLs:</strong> I can provide summaries or extracts of information contained in valid URLs, as long as they are not subscription-based or private sources.  </p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "toc.integrate", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
