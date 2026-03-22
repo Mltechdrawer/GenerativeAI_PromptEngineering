@@ -12,11 +12,12 @@ Understand what generative AI is, what types of outputs it produces (text, image
 [Key concepts](block1_key_concepts.md "Key concepts")
 
 ## Mini-demo
-1. Ask for a summary of a technical topic with a **format** (bullet points + conclusions).
-2. Ask for a **rewrite** adapted to a different audience (e.g., 1st-year vs 4th-year students).
+1. Write a summary of a technical topic with a **format** (bullet points + conclusions).
+2. Rewrite it adapted to a different audience (e.g., 1st-year vs 4th-year students).
 3. Observe how the results change when adding constraints.
 
 ## Quick activity
+
 Write a 3-line prompt to:
 - Explain a complex concept to a specific audience.
 - Request an output with a fixed format.

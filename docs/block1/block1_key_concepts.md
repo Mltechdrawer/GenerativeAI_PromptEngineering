@@ -1,4 +1,4 @@
-# Block 1: Key Concepts
+# B 1: Key Concepts
 
 ## 1. Artificial Intelligence (AI)
 
@@ -10,12 +10,20 @@ AI systems do not think or understand in a human sense. Instead, they learn patt
 
 Think of AI as a student who has read millions of books and can answer questions based on that experience, but without true understanding.
 
-**Examples**
-- Recommendation systems (e.g., Netflix, Spotify)
-- Automatic translation tools
+<details>
+<summary> Examples</summary>
 
-**Try it**
-Identify AI systems you use in your daily life.
+- Recommendation systems (e.g., Netflix, Spotify)  
+- Automatic translation tools  
+
+</details>
+
+<details>
+<summary> Think about it</summary>
+
+Which AI systems do you use in your daily life without noticing?
+
+</details>
 
 ---
 
@@ -29,12 +37,20 @@ Instead of writing explicit instructions, we provide examples and allow the syst
 
 This is similar to teaching a child what a dog is by showing many examples, rather than defining all its characteristics.
 
-**Examples**
-- Spam detection
-- Image classification
+<details>
+<summary> Examples</summary>
 
-**Try it**
+- Spam detection  
+- Image classification  
+
+</details>
+
+<details>
+<summary> Try it</summary>
+
 How would you teach a machine to distinguish between cats and dogs?
+
+</details>
 
 ---
 
@@ -48,12 +64,20 @@ Each layer extracts increasingly abstract features, allowing the system to handl
 
 You can think of it as a sequence of filters, where each layer refines the information further.
 
-**Examples**
-- Face recognition
-- Voice assistants (e.g., Siri, Alexa)
+<details>
+<summary> Examples</summary>
 
-**Think about it**
+- Face recognition  
+- Voice assistants (e.g., Siri, Alexa)  
+
+</details>
+
+<details>
+<summary> Think about it</summary>
+
 Why is recognizing a face more complex than detecting spam?
+
+</details>
 
 ---
 
@@ -67,12 +91,20 @@ These systems are trained on large datasets and can generate outputs that resemb
 
 Think of it as an artist who has learned from thousands of works and can now create new ones.
 
-**Examples**
-- ChatGPT (text generation)
-- DALL·E (image generation)
+<details>
+<summary> Examples</summary>
 
-**Try it**
+- ChatGPT (text generation)  
+- DALL·E (image generation)  
+
+</details>
+
+<details>
+<summary> Try it</summary>
+
 Propose a creative prompt and see what kind of output an AI system can generate.
+
+</details>
 
 ---
 
@@ -85,13 +117,15 @@ A prompt is the instruction or input given to an AI system to guide its response
 The clarity and level of detail in a prompt strongly influence the quality of the output.
 
 Compare the following:
-- “Explain AI”
-- “Explain AI to a 12-year-old student using simple examples”
+- “Explain AI”  
+- “Explain AI to a 12-year-old student using simple examples”  
 
-Which one would produce a better answer?
+<details>
+<summary> Try it</summary>
 
-**Try it**
 Rewrite a vague prompt to make it more specific and effective.
+
+</details>
 
 ---
 
@@ -104,10 +138,14 @@ Prompt Engineering is the practice of designing and refining prompts to obtain b
 It involves iterating on prompts by adding context, specifying formats, and introducing constraints.
 
 A simple prompt can be progressively improved:
-1. Basic request
-2. Add context
-3. Specify output format
-4. Add constraints or conditions
+1. Basic request  
+2. Add context  
+3. Specify output format  
+4. Add constraints or conditions  
 
-**Try it**
+<details>
+<summary> Try it</summary>
+
 Take a simple prompt and improve it step by step to obtain a more precise and useful response.
+
+</details>
