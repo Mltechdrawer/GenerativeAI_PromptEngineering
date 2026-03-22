@@ -3,13 +3,15 @@
 ## Objective
 Understand what generative AI is, what types of outputs it produces (text, image, video, code), and what its limitations are.
 
-## Key concepts
-- Foundational models and LLMs (general idea).
+## Key concepts 
+- Foundational models and LLMs.
 - Context, tokens, and context window (why it “forgets” things).
 - Hallucinations: why they occur and how to mitigate them.
 - Best practices: verification, sources, and risk control.
 
-## Mini-demo (5 min)
+[Key concepts](block1_key_concepts.md "Key concepts")
+
+## Mini-demo
 1. Ask for a summary of a technical topic with a **format** (bullet points + conclusions).
 2. Ask for a **rewrite** adapted to a different audience (e.g., 1st-year vs 4th-year students).
 3. Observe how the results change when adding constraints.
