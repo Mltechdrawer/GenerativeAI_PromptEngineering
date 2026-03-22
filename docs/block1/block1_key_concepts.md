@@ -149,3 +149,26 @@ A simple prompt can be progressively improved:
 Take a simple prompt and improve it step by step to obtain a more precise and useful response.
 
 </details>
+
+
+
+<details>
+<summary> Do language models only use patterns? What is the role of alignment?</summary>
+
+<p>Large Language Models (LLMs) are fundamentally trained to learn patterns from vast amounts of text data. These patterns are not simple word associations, but complex relationships between concepts, structures, and contexts. In this sense, the model predicts the most likely continuation of a given input based on everything it has learned.</p>
+
+<p>However, this does not mean that the model “understands” in a human sense. It generates responses by leveraging statistical patterns that reflect how humans use language, reason, and explain ideas.</p>
+
+<p>This is where alignment becomes essential.</p>
+
+<p>Alignment does not teach the model new knowledge. Instead, it shapes how the model uses what it has already learned. Through techniques such as human feedback and instruction tuning, the model is guided to produce responses that are more useful, clear, safe, and aligned with user expectations.</p>
+
+<p>In simple terms:</p>
+
+<p>Pretraining teaches the model how to generate language.</p>
+<p>Alignment teaches the model how to behave.</p>
+
+<p>As a result, aligned models are better at following instructions, structuring answers, adapting tone, and avoiding harmful or irrelevant outputs. However, alignment does not eliminate the model’s limitations: it still relies on pattern prediction and may produce incorrect or misleading responses.</p>
+
+<p>In conclusion, language models rely on learned patterns, but alignment plays a crucial role in making those patterns usable, reliable, and appropriate for real-world applications.</p>
+</details>
