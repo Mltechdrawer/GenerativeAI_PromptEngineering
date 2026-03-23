@@ -36,9 +36,12 @@ Choosing the right tool depends on:
 
 ###  Text generation and assistants
 
-- **ChatGPT** → https://chat.openai.com  
-- **Gemini** → https://gemini.google.com  
-- **Claude** → https://claude.ai  
+- **ChatGPT** → https://chat.openai.com - integrated into: Microsoft Copilot (Word, Excel, PowerPoint, Outlook) - Visual Studio Code (AI-assisted coding extensions) - Slack (chatbots and workflow automation)
+Notion (writing and knowledge management) - Zapier (workflow automation with AI) - Custom applications via the OpenAI API
+- **Gemini** → https://gemini.google.com - integrates tightly with Google services (Docs, Gmail, Drive) 
+- **Claude** → https://claude.ai - integrated into: Slack (team assistance and internal knowledge queries) - Notion (writing, summarization, documentation) - Custom applications via the Anthropic API
+Enterprise tools and internal company platforms (knowledge assistants, document analysis)
+- **MetaAI** Meta AI → https://www.meta.ai - integrated into platforms like Instagram, Facebook, and WhatsApp
 
 These tools are designed for: 
 

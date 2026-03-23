@@ -1,9 +1,6 @@
-# Block IV — Practical applications and personalization
+# B V — Practical Applications 
 
-## Objective
-Apply what has been learned to a real workflow and create a **personalized assistant** (Gems / GPTs / similar tools) for recurring tasks.
-
-# Final Exercise: Design Your AI Assistant
+## Final Exercise: Design Your AI Assistant
 
 ## Objective
 
@@ -38,8 +35,9 @@ Your proposal must include:
 
 ---
 
-### 2. Prompt design
-Write a **well-structured prompt** including:
+### 2. Prompt design  
+Write a **well-structured prompt** including:  
+
 - Role  
 - Context  
 - Task  
@@ -48,25 +46,48 @@ Write a **well-structured prompt** including:
 
 ---
 
-### 3. Context design
-Explain:
+### 3. Context design  
+
+Explain:  
+
 - What information the model needs  
 - Why that context is relevant  
 - What would happen without it  
 
 ---
 
-### 4. Expected output
-- What kind of response do you expect?  
-- Provide an example (real or simulated)
+### 4. Create prompt variants
+
+- A simplified version
+- An improved/optimized version
 
 ---
 
+### 5. Generate an example output
+
+- A simplified version
+- An improved/optimized version
+
+---
+
+### 6. Perform a critical evaluation
+
+- What works well?
+- What are the limitations?
+- How could it be improved?
+
 ## Presentation
 
-- Duration: **2–3 minutes per group**  
+- Duration: ** 8-10 minutes per group**  
 - Explain your assistant clearly and concisely  
 - Show your prompt and expected output  
+
+Presentations should include:
+
+- Description of the use case
+- Prompt design and structure
+- Example output
+- Key insights and lessons learned
 
 ---
 

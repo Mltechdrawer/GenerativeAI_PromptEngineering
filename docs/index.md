@@ -8,10 +8,12 @@ Welcome to the **Generative AI + Prompt Engineering** course, where you will exp
 
 ## Structure
 
-- **Block I (30 min):** Introduction to Generative AI  
-- **Block II (45 min):** Prompt Engineering (core)  
-- **Block III (60 min):** Tools and current landscape
-- **Block IV (45 min):** Practical applications and personalization (Gems/GPTs, etc.)
+- **Block I:** Introduction to Generative AI  
+- **Block II:** Prompt Engineering (core)  
+- **Block III:** Context Engineering
+- **Block IV:** Tools
+- **Block V:** Practical application
+
 
 
 > Tip: use the menu on the left to navigate through the different blocks.       
